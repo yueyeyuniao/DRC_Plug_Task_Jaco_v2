@@ -20,7 +20,7 @@
 
 ## Introduction:
 
-#### /launch folder includes a launch file for launching the robot, launching the Realsense camera, launching the Kinect camera, and launching the YOLO object detection.
+#### /launch folder includes a launch file for launching the robot, launching the Realsense camera, launching the Kinect camera, and launching the YOLO object detection
 #### /src folder includes all the source codes
 
 ## Copyright: 
