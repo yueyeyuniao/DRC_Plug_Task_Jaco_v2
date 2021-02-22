@@ -67,7 +67,7 @@ class SocketPoseEstimation
   std::vector<float> center_z;
   bool isProjectPixelTo3dRay = false;
   float roll, yaw, pitch;
-  tf::TransformBroadcaster br1, br2;
+  tf::TransformBroadcaster br1, br2, br3;
 
 public:
   SocketPoseEstimation()
@@ -304,14 +304,17 @@ public:
         roll = atan(plane_normal.z/plane_normal.y);
         pitch = 0; 
         yaw = atan(-plane_normal.x/sqrt(pow(plane_normal.y,2)+pow(plane_normal.z,2)));
-        tf::Transform transform1, transform2;
+        tf::Transform transform1, transform2, transform3;
         transform1 = tf_transform_calculation(center_x[0], center_y[0], center_z[0]); 
         transform2 = tf_transform_calculation(center_x[1], center_y[1], center_z[1]);
+	transform3 = tf_transform_calculation(center_x[1], center_y[1]+0.1, center_z[1]);
         transform1.setRotation(tf::createQuaternionFromRPY(roll, pitch, yaw)); 
-        transform2.setRotation(tf::createQuaternionFromRPY(roll, pitch, yaw));  
-        // publish tf
-        br1.sendTransform(tf::StampedTransform(transform1, ros::Time::now(), "root", "socket1"));
+        transform2.setRotation(tf::createQuaternionFromRPY(roll, pitch, yaw));
+	transform3.setRotation(tf::createQuaternionFromRPY(roll, pitch, yaw));  
+        // publish tf	
+        // br1.sendTransform(tf::StampedTransform(transform1, ros::Time::now(), "root", "socket1"));
         br2.sendTransform(tf::StampedTransform(transform2, ros::Time::now(), "root", "socket2"));
+	br3.sendTransform(tf::StampedTransform(transform3, ros::Time::now(), "root", "preinsert"));
       }
 
   }  
