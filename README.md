@@ -5,24 +5,23 @@
 
 ## System requirement:
 
-### ROS Kinectic
-### YOLO object detection
-### Opencv
-### PCL
-### Kinova ROS package
-### Moveit
+#### ROS Kinectic
+#### YOLO object detection
+#### Opencv
+#### PCL
+#### Kinova ROS package
+#### Moveit
 
 ## Hardware requirement:
 
-### Kinova Jaco v2 arm
-### Realsense D435
-### Kinect
+#### Kinova Jaco v2 arm
+#### Realsense D435
+#### Kinect
 
 ## Introduction:
 
-### /launch folder includes a launch file for launching the robot, launching the Realsense camera, launching the Kinect camera, and launching the YOLO object detection.
-### /src folder includes all the source codes
+#### /launch folder includes a launch file for launching the robot, launching the Realsense camera, launching the Kinect camera, and launching the YOLO object detection.
+#### /src folder includes all the source codes
 
 ## Copyright: 
-
-[RIVeR Lab](http://robot.neu.edu/) & IEEE
+### [RIVeR Lab](http://robot.neu.edu/) & IEEE
