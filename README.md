@@ -2,6 +2,9 @@
 ## [Paper link](https://ieeexplore.ieee.org/document/9159044) & [Paper link](https://arxiv.org/abs/2007.08083)
 ## [Video link](https://drive.google.com/file/d/1ZQwihikZP8qyKCqetU-ucNQHOqYq03Au/view?usp=sharing)
 
+## System overview:
+![alt-text](https://github.com/yueyeyuniao/DRC_Plug_Task_Jaco_v2/blob/master/figures/workspace.png)<br/>
+
 ## System requirement:
 #### ROS Kinectic
 #### YOLO object detection
