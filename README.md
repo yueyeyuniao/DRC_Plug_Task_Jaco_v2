@@ -4,6 +4,7 @@
 
 ## System overview:
 ![alt-text](https://github.com/yueyeyuniao/DRC_Plug_Task_Jaco_v2/blob/master/figures/workspace.png)<br/>
+([AIM 2020](https://ieeexplore.ieee.org/document/9159044))
 
 ## System requirement:
 #### ROS Kinectic
