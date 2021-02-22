@@ -24,4 +24,4 @@
 #### /src folder includes all the source codes
 
 ## Copyright: 
-### [RIVeR Lab](http://robot.neu.edu/) & IEEE
+### This work was developed at the [RIVeR Lab, Northeastern University](http://robot.neu.edu/) 
